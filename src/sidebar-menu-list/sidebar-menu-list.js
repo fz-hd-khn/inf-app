@@ -20,14 +20,15 @@ function SidebarMenuList() {
   ]);
 
   return (
-    
-    <ul className="sidebar-container">
-      {
-        menuItems.map(item => {
-          return <MenuItem key={item.url} {...item} />
-        })
-      }
-    </ul>
+    <div class="sidebar">
+      <ul className="sidebar-container">
+        {
+          menuItems.map(item => {
+            return <MenuItem key={item.url} {...item} />
+          })
+        }
+      </ul>
+    </div>
   );
 }
 
